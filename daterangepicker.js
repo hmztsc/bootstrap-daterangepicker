@@ -124,10 +124,10 @@
                 this.maxDate = moment(options.maxDate, this.format);
 
             if (typeof options.startDate == 'object')
-                this.startDate = moment(options.startDate);
+                this.startDate = moment(options.startDate) || moment();
 
             if (typeof options.endDate == 'object')
-                this.endDate = moment(options.endDate);
+                this.endDate = moment(options.endDate) || moment();
 
             if (typeof options.minDate == 'object')
                 this.minDate = moment(options.minDate);
